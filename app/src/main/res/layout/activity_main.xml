@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+<!--        <SurfaceView-->
+<!--            android:id="@+id/surfaceView"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent" />-->
+
+
+        <ImageButton
+            android:id="@+id/iv_question_mark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginStart="25dp"
+            android:onClick="onQuestionClick"
+            android:background="@drawable/question_mark" />
+
+        <ImageButton
+            android:id="@+id/iv_exclamation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:onClick="onexclamationClick"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/exclamation" />
+    </RelativeLayout>
+
+</layout>
